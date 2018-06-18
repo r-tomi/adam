@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>サービス紹介｜デモサイト（最新テンプレ）</title>
+<meta name="keywords" content="サービス紹介" />
+<meta name="description" content="Mtameは、企業のマーケティング活動を支援します。コンテンツ制作、マーケティングツール、コンサルティングを通して、マーケティングとエンターテインメントを融合させた提案をおこないます。" />
+
+<meta property="og:title" content=" ページの タイトル" />
+<meta property="og:type" content=" ページの種類" />
+<meta property="og:url" content=" ページの URL" />
+<meta property="og:image" content=" サムネイル画像の URL" />
+<meta property="og:site_name" content="サイト名" />
+<meta property="og:description" content=" ページのディスクリプション" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="/dcms_media/css/base.css" />
+<link rel="stylesheet" href="/dcms_media/css/layout.css" />
+<link rel="stylesheet" href="/dcms_media/css/module.css" />
+<link rel="stylesheet" href="/dcms_media/css/common.css" /><!--全ページ共通ー-->
+<link rel="stylesheet" href="/dcms_media/css/slick.css" /><!--スライド・カルーセルー-->
+<link rel="stylesheet" href="/dcms_media/css/jquery.flexslider.css" />
+<link rel="stylesheet" href="/dcms_media/css/perfect-scrollbar.css"><!--スクロールバー-->
+<link rel="stylesheet" href="/dcms_media/css/template_c2.css" /><!--テンプレオリジナル-->
+<link rel="stylesheet" href="http://knowusdemo009.cms2.jp/dcms_media/css/top.css" />
+<link rel="stylesheet" href="/dcms_media/css/color.css" />
+
+<script src="/dcms_media/js/jquery-1.11.1.min.js"></script>
+<script src="/dcms_media/js/current.js"></script>
+<script src="/dcms_media/js/scrolltopcontrol.js"></script><!--ページトップ-->
+<script src="/dcms_media/js/slick.min.js"></script><!--スライダー-->
+<script src="/dcms_media/js/perfect-scrollbar.jquery.js"></script><!--スクロールバー-->
+
+<script>
+var lh = "";
+	lh = location.href;
+	if (lh.match(/dcmsadm/)){
+	} else {
+document.write('<link rel="stylesheet" href="/dcms_media/css/publicside.css" />');
+
+$(document).ready(function(){
+	// pagetitle 入れ替え
+	$('#pagetitle').insertBefore('main.inner');
+	//biggerlink
+	$('._dlb_box4-4_area .col').biggerlink();
+	$('._dlb_box3-6_area .col').biggerlink();
+	//matchHeight
+	$('.matchH').matchHeight();
+	$('.matchH2').matchHeight();
+	//flow
+	$("._dlb-flow_mheight").matchHeight();
+	//header search
+	$("header.template_c2 .search_btn").on("click", function() {
+		var windowWidth = window.innerWidth;
+		$("header.template_c2 .search_area").slideToggle();
+		$("header.template_c2 .search_btn").toggleClass("active");
+	});
+	//header gnavi
+	$("header.template_c2 .gnavi_btn_sp").on("click", function() {
+		var windowWidth = window.innerWidth;
+		$("header.template_c2 .gnavi_area").slideToggle();
+		$("header.template_c2 .gnavi_btn_sp").toggleClass("active");
+	});
+	var $win = $(window);
+	$win.on('load resize',function(){
+		var windowWidth = window.innerWidth;
+		if(windowWidth <= 690){
+			$('header.template_c2 .gnavi_area').insertAfter('#header_area');
+		}
+	});
+	//Scrollbar
+	$('.rss_f_in').perfectScrollbar();
+	// var $win = $(window);
+	// $win.on('load resize',function(){
+	// 	var windowWidth = window.innerWidth;
+	// 	if(windowWidth >= 980){
+	// 		//contents_right
+	// 		var lhc2 = $('#locator_template_c22').outerHeight();
+	// 		var ptc2 = $('#pagetitle').outerHeight();
+	// 		var crmt = lhc2 + ptc2
+	// 		$('#contents_right').css('margin-top',crmt + 'px');
+	// 	}
+	// });
+	var $win = $(window);
+	$win.on('load resize',function(){
+		var windowWidth = window.innerWidth;
+		if(windowWidth <= 980){
+			$("#subnav.sb_col2_accordion .sp_btn").on("click", function() {
+				var windowWidth = window.innerWidth;
+				$("#subnav.sb_col2_accordion #subnav_list").slideToggle();
+				$("#subnav.sb_col2_accordion .sp_btn").toggleClass("active");
+			});
+		}
+	});
+	//ページ内リンク用スクロール
+	$('a[href^=#]').click(function() {
+		var speed = 300; // ミリ秒
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top;
+		$('body,html').animate({scrollTop:position}, speed, 'swing');
+		return false;
+	});
+});
+}
+</script>
+
+<link href="http://creator006.cms2.jp/dcms_blocks/common/css/common.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+
+<body id="common" class="page_service">
+	<header class="template_c2" role="presentation">
+<div id="header">
+<div id="header_area">
+<div id="header_logo"><a href="/"><img src="/dcms_media/image/common/logo.jpg" alt="○○株式会社" /></a></div>
+<div class="gnavi_btn_sp">
+<div class="gnavi_btn_sp_in"><span class="dmy"><!--btn--></span> <span class="dmy"><!--btn--></span> <span class="dmy"><!--btn--></span></div>
+</div>
+<div class="gnavi_area"><nav>
+<ul>
+<li><a href="/service.html">サービス紹介</a></li>
+<li><a href="/company.html">会社案内</a></li>
+<li><a href="/support.html">サポート情報</a></li>
+<li><a href="/recruit.html">採用情報</a></li>
+</ul>
+<div class="gnavi_contact"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em><span class="txt">お問い合わせ</span></a></div>
+<div class="gnavi_contact no2"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em><span class="txt">体験版お申込み</span></a></div>
+</nav></div>
+<div id="contact_area"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em> <span class="txt">お問い合わせ</span> </a></div>
+<div id="contact_area2"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em> <span class="txt">体験版お申込み</span> </a></div>
+<!-- <div class="search_btn"><em class="fab fa-sistrix">icon</em>
+<p class="txt">検索</p>
+</div> --></div>
+</div>
+<!-- <div class="search_area"><form action="/dcms-search/"><input class="search_txt" name="schKeyword" type="text" placeholder="サイト内検索" /> <input class="submit_btn" type="submit" value="検索" /></form></div> --></header>
+
+	<div id="locator_template_c2"><div class="inner" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://creator006.cms2.jp/index.html" itemprop="item"><span itemprop="name">HOME</span></a></span>&nbsp;&gt;&nbsp;サービス紹介</div></div>
+	<main>
+		
+		<!-- ブロック貼り付けエリア -->
+		<div id="dcms_layoutPageBlockPasteArea">
+		<!-- ブロック -->
+		<div id="dcms_layoutPageBlock">
+		<!--###_DCMS_BLOCK_START_###-->
+<div id="pagetitle" class="template_c2" style="background-image: url('/dcms_media/image/pagetitle_bg_template_c2_page_service.jpg');">
+<div class="pagetitle_bg"><!--黒透過--></div>
+<div class="pagetitle_block">
+<h1 class="pagetitle inner">サービス紹介</h1>
+</div>
+</div>
+<!--###_DCMS_BLOCK_END_###-->
+<!--###_DCMS_BLOCK_START_###-->
+<div class="m40_pc m30_tablet m30_sp inner">
+<p>###_DCMS_PAGE_DESCRIPTION_###</p>
+</div>
+<!--###_DCMS_BLOCK_END_###-->
+<!--###_DCMS_BLOCK_START_###-->
+<div class="inner">
+<section class="_dlb_box3-6_area m60_pc m50_tablet m40_sp">
+<div class="col3_m_321"><!--start-->
+<div class="col">
+<figure><img src="/dcms_media/image/template_c2_service_imig01.jpg" alt="○○の様子" /></figure>
+<div class="_dlb_box3-6_txt">
+<h2 class="_dlb_subtitle4_02">CMS機能</h2>
+<p class="matchH">中小企業での利用を前提にお客様のニーズを汲み取りながらバージョンアップを重ねてきたために、シンプルな感じ画面は初めての方でも簡単にホームページの更新が可能です。</p>
+<p class="txt_link arr txt_r mt10"><a href="/service/service01.html">CMS機能のページへ</a></p>
+</div>
+</div>
+<!--end--> <!--start-->
+<div class="col">
+<figure><img src="/dcms_media/image/template_c2_service_imig02.jpg" alt="○○の様子" width="318" height="226" /></figure>
+<div class="_dlb_box3-6_txt">
+<h2 class="_dlb_subtitle4_02">リスティング広告運用</h2>
+<p class="matchH">リスティング運用のことだけではなく、Web制作をしてきた実績をもとに、Webサイト全体の見直しもお手伝いいたします。</p>
+<p class="txt_link arr txt_r mt10"><a href="/service/service01.html">リスティング広告運用のページへ</a></p>
+</div>
+</div>
+<!--end--> <!--start-->
+<div class="col">
+<figure><img src="/dcms_media/image/template_c2_service_imig03.jpg" alt="○○の様子" width="318" height="226" /></figure>
+<div class="_dlb_box3-6_txt">
+<h2 class="_dlb_subtitle4_02">Indeed広告</h2>
+<p class="matchH">世界最大規模の採用特化型検索サービスIndeed×CMS BlueMonkeyツール×採用特化テンプレートをご提供可能な専用プランとなっております。</p>
+<p class="txt_link arr txt_r mt10"><a href="/service/service01.html">Indeed広告のページへ</a></p>
+</div>
+</div>
+<!--end--></div>
+</section>
+</div>
+<!--###_DCMS_BLOCK_END_###-->
+<!--###_DCMS_BLOCK_START_###-->
+<section class="_dlb_inner _dlb_box2-6_area reverse m40_pc m40_tablet m30_sp">
+<div class="col2_m inner">
+<div class="col _dlb_box2-6_txt">
+<h2 class="_dlb_subtitle2_02">導入事例</h2>
+<ul class="_dlb_box2-6_list">
+<li><a href="/service/case/case01.html"><em class="fa fa-check-circle" aria-hidden="true"><!--アイコン--></em>藤倉ゴム工業株式会社様</a></li>
+<li><a href="/service/case/case01.html"><em class="fa fa-check-circle" aria-hidden="true"><!--アイコン--></em>株式会社タチエス様</a></li>
+</ul>
+</div>
+<div class="col _dlb_box2-6_img"><img src="/dcms_media/image/template_c2_service_case_imig00.jpg " alt="サンプルサンプル" /></div>
+</div>
+</section>
+<!--###_DCMS_BLOCK_END_###-->
+<!--###_DCMS_BLOCK_START_###-->
+<div class="inner">
+<section class="_dlb_inner _dlb_box1-1_area m60_pc m50_tablet m30_sp">
+<h2 class="_dlb_subtitle2_02">セキュリティー対策も安心な国産CMS</h2>
+<div class="m40_pc m30_tablet m20_sp">CMSツールは多機能になればなるほど、運用者のWeb知識水準が求められるため、弊社CMSツールではhtmlソースを知らなくても更新ができるようシンプルな設計を施しております。<br />また、CMSツールに関する電話やメールでの操作サポートはもちろん、CMSツールを導入したホームページ運営の支援も、訪問サポートチームにてお手伝いします。ツールの導入だけで終わりでは無く、運用面のフォローを行いお客様の成果に貢献します。</div>
+<div class="_dlb_btn_w30 _dlb_btn_right mt20">
+<div class="_dlb_btn"><a href="/service/reason.html">選ばれる理由へ</a></div>
+</div>
+</section>
+</div>
+<!--###_DCMS_BLOCK_END_###-->
+
+		</div>
+		<!-- // ブロック -->
+		</div>
+		<!-- // ブロック貼り付けエリア -->
+		
+	</main>
+	<footer class="template_c2" role="presentation">
+<div id="footer_lead">
+<div class="footer_lead_block inner">
+<div class="footer_logo"><a href="/"><img src="/dcms_media/image/common/logo.jpg" alt="○○株式会社" /></a></div>
+<div class="footer_sns"><a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener"><img src="/dcms_media/image/icon_instagram.png" alt="instagram" /></a> <a href="https://www.facebook.com/mtamelab/" target="_blank" rel="noopener"><img src="/dcms_media/image/icon_facebook.png" alt="facebook" /></a> <a href="https://twitter.com/m_tame_lab" target="_blank" rel="noopener"><img src="/dcms_media/image/icon_twitter.png" alt="twitter" /></a></div>
+</div>
+</div>
+<div id="footer_nav">
+<div class="footer_nav_block inner">
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/service.html">サービス紹介</a></p>
+<ul class="fnav_list">
+<li><a href="/service/service01.html">サービス 1</a></li>
+<li><a href="/service/case.html">実績</a></li>
+<li><a href="/service/reason.html">選ばれる理由</a></li>
+</ul>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/company.html">会社案内</a></p>
+<ul class="fnav_list">
+<li><a href="/company/outline.html">会社概要・沿革</a></li>
+<li><a href="/company/office.html">事業所一覧</a></li>
+<li><a href="/company/outline.html">社長メッセージ・理念</a></li>
+</ul>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/support.html">サポート情報</a></p>
+<ul class="fnav_list">
+<li><a href="/support/faq.html">よくある質問</a></li>
+<li><a href="/support/catalog.html">カタログ</a></li>
+</ul>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/recruit.html">採用情報</a></p>
+<p class="fnav_title"><a href="/contact.html">お問い合わせ</a></p>
+</div>
+</div>
+<!-- 1列に2つ入れたとき--> <!--<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+<ul class="fnav_list">
+<li><a href="#">テキストリンクテキストリンクテキストリンクテキストリンク</a></li>
+<li><a href="#">テキストリンクテキストリンク</a></li>
+</ul>
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+<ul class="fnav_list">
+<li><a href="#">テキストリンクテキストリンク</a></li>
+<li><a href="#">テキストリンクテキストリンク</a></li>
+</ul>
+</div>
+</div> --></div>
+</div>
+<div id="footer_info">
+<div class="inner">
+<div class="footer_info_navi"><a href="/privacy.html">プライバシーポリシー</a><a href="/sitemap.html">サイトマップ</a></div>
+<small>Copyright &copy; mtame, Inc All rights reserved.</small></div>
+</div>
+</footer>
+
+	</body>
+</html>
