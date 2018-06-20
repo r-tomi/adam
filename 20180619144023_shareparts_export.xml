@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+  <item>
+    <sharePartsName>facebook スクリプト</sharePartsName>
+    <sharePartsTag>FACEBOOKSCRIPT</sharePartsTag>
+    <sharePartsDetail><![CDATA[<!--Facebookタイムラインなど-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6&appId=122521337887576";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>]]></sharePartsDetail>
+    <htmlEditFlg>0</htmlEditFlg>
+  </item>
+  <item>
+    <sharePartsName>共通 お問い合わせ</sharePartsName>
+    <sharePartsTag>TEMPLATEC2CTA</sharePartsTag>
+    <sharePartsDetail><![CDATA[<section id="cta_area" class="template_c2">
+<div class="cta_block">
+<h3 class="cta_title">無料トライアル/資料請求・お問い合わせはこちらから</h3>
+<div class="col2_221">
+<div class="col cta_l">
+<p class="cta_txt">30日間無料トライアル</p>
+<p class="cta_btn"><a href="#">無料トライアルのご案内</a></p>
+</div>
+<div class="col cta_r">
+<p class="cta_txt">資料請求・ご質問・ご相談などお気軽に</p>
+<p class="cta_btn"><a href="#">お問い合わせ・資料請求</a></p>
+</div>
+</div>
+</div>
+</section>]]></sharePartsDetail>
+    <htmlEditFlg>0</htmlEditFlg>
+  </item>
+  <item>
+    <sharePartsName>フッター（コーレポート No.02）</sharePartsName>
+    <sharePartsTag>TEMPLATEC2FOOTER</sharePartsTag>
+    <sharePartsDetail><![CDATA[<footer class="template_c2" role="presentation">
+<div id="footer_lead">
+<div class="footer_lead_block inner">
+<div class="footer_logo"><a href="/"><img src="/dcms_media/image/common/logo.jpg" alt="○○株式会社" /></a></div>
+<div class="footer_sns"><a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener"><img src="/dcms_media/image/icon_instagram.png" alt="instagram" /></a> <a href="https://www.facebook.com/mtamelab/" target="_blank" rel="noopener"><img src="/dcms_media/image/icon_facebook.png" alt="facebook" /></a> <a href="https://twitter.com/m_tame_lab" target="_blank" rel="noopener"><img src="/dcms_media/image/icon_twitter.png" alt="twitter" /></a></div>
+</div>
+</div>
+<div id="footer_nav">
+<div class="footer_nav_block inner">
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/service.html">サービス紹介</a></p>
+<ul class="fnav_list">
+<li><a href="/service/service01.html">サービス 1</a></li>
+<li><a href="/service/case.html">実績</a></li>
+<li><a href="/service/reason.html">選ばれる理由</a></li>
+</ul>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/company.html">会社案内</a></p>
+<ul class="fnav_list">
+<li><a href="/company/outline.html">会社概要・沿革</a></li>
+<li><a href="/company/office.html">事業所一覧</a></li>
+<li><a href="/company/outline.html">社長メッセージ・理念</a></li>
+</ul>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/support.html">サポート情報</a></p>
+<ul class="fnav_list">
+<li><a href="/support/faq.html">よくある質問</a></li>
+<li><a href="/support/catalog.html">カタログ</a></li>
+</ul>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="/recruit.html">採用情報</a></p>
+<p class="fnav_title"><a href="/contact.html">お問い合わせ</a></p>
+</div>
+</div>
+<!-- 1列に2つ入れたとき--> <!--<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+<ul class="fnav_list">
+<li><a href="#">テキストリンクテキストリンクテキストリンクテキストリンク</a></li>
+<li><a href="#">テキストリンクテキストリンク</a></li>
+</ul>
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+</div>
+</div>
+<div class="fnav_unit">
+<div class="fnav_unit_one">
+<p class="fnav_title"><a href="#">テキストリンク</a></p>
+<ul class="fnav_list">
+<li><a href="#">テキストリンクテキストリンク</a></li>
+<li><a href="#">テキストリンクテキストリンク</a></li>
+</ul>
+</div>
+</div> --></div>
+</div>
+<div id="footer_info">
+<div class="inner">
+<div class="footer_info_navi"><a href="/privacy.html">プライバシーポリシー</a><a href="/sitemap.html">サイトマップ</a></div>
+<small>Copyright &copy; mtame, Inc All rights reserved.</small></div>
+</div>
+</footer>]]></sharePartsDetail>
+    <htmlEditFlg>0</htmlEditFlg>
+  </item>
+  <item>
+    <sharePartsName>ヘッダー（コーレポート No.02）</sharePartsName>
+    <sharePartsTag>TEMPLATEC2HEADER</sharePartsTag>
+    <sharePartsDetail><![CDATA[<header class="template_c2" role="presentation">
+<div id="header">
+<div id="header_area">
+<div id="header_logo"><a href="/"><img src="/dcms_media/image/common/logo.jpg" alt="○○株式会社" /></a></div>
+<div class="gnavi_btn_sp">
+<div class="gnavi_btn_sp_in"><span class="dmy"><!--btn--></span> <span class="dmy"><!--btn--></span> <span class="dmy"><!--btn--></span></div>
+</div>
+<div class="gnavi_area"><nav>
+<ul>
+<li><a href="/service.html">サービス紹介</a></li>
+<li><a href="/company.html">会社案内</a></li>
+<li><a href="/support.html">サポート情報</a></li>
+<li><a href="/recruit.html">採用情報</a></li>
+</ul>
+<div class="gnavi_contact"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em><span class="txt">お問い合わせ</span></a></div>
+<div class="gnavi_contact no2"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em><span class="txt">体験版お申込み</span></a></div>
+</nav></div>
+<div id="contact_area"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em> <span class="txt">お問い合わせ</span> </a></div>
+<div id="contact_area2"><a href="/contact.html"><em class="far fa-envelope"><!--icon--></em> <span class="txt">体験版お申込み</span> </a></div>
+<!-- <div class="search_btn"><em class="fab fa-sistrix">icon</em>
+<p class="txt">検索</p>
+</div> --></div>
+</div>
+<!-- <div class="search_area"><form action="/dcms-search/"><input class="search_txt" name="schKeyword" type="text" placeholder="サイト内検索" /> <input class="submit_btn" type="submit" value="検索" /></form></div> --></header>]]></sharePartsDetail>
+    <htmlEditFlg>0</htmlEditFlg>
+  </item>
+</items>

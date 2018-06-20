@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+#form_wrap{
+    width:100%;
+    position:relative;
+}
+input,textarea,select  {
+border:0;
+padding:5px 7px;
+color:#333;
+border:solid 1px #ccc;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+input:focus,textarea:focus,select:focus {
+    border:solid 1px #ED1C21;
+}
+
+input[type="file"]{
+    border: none;
+    padding-left: 0;
+}
+
+
+table#table_address td,
+table#table_address th{border: none;}
+
+/*form pageContact,Enquete common*/
+/*-----------------------------------------------------------------------*/
+
+
+/*#form_container{
+width:900px;
+margin:0px auto;
+}
+
+#form_header{
+width:900px;
+height:80px;
+}
+
+#form_main{
+width:100%;
+float:left;
+margin:0px auto 50px auto;
+overflow:auto;
+}
+
+#form_title{
+border-bottom:solid 2px #000000;
+margin-bottom:20px;
+line-height:150%;
+font-size:120%;
+font-weight:bold;
+}
+
+
+
+#form_required_text{
+margin:20px 0 20px 0;
+color:#CC0000;
+}
+*/
+
+/*#form_intro{
+    margin-bottom:15px;
+}*/
+#submit_button{
+clear:both;
+text-align:center;
+margin:40px 0 0;
+text-transform:uppercase;
+font-weight:bold;
+color:#333;
+cursor:pointer;
+}
+
+#submit_button input{
+width:180px;
+border:solid 1px #ED1C21;
+padding:10px 0;
+cursor:pointer;
+font-size:120%;
+}
+#submit_button input:hover{
+width:180px;
+background-color:#ED1C21;
+color:#fff;
+}
+
+/*#form_footer{
+width:900px;
+height:50px;
+}
+
+address {
+font-size: 85%;
+font-style: normal;
+float:right;
+line-height:50px;
+}
+
+#form_footer a{
+color:#000;
+}
+*/
+/*form pageContact*/
+/*-----------------------------------------------------------------------*/
+
+#form_contact_main{
+overflow:auto;
+}
+
+#form_wrap{
+width:100%;
+}
+
+#form_contact_main dl{
+width:100%;
+border-top:1px dotted #ddd;
+/*background-color:#f5f5f5;*/
+line-height:220%;
+float:left;
+}
+#form_contact_main dl:first-child{border-top:none;}
+#form_contact_main dt{
+width:30%;
+float:left;
+padding:30px 10px;
+}
+
+#form_contact_main dt span{
+font-weight:bold;
+color:#FF0000;
+}
+
+#form_contact_main dd{
+padding:30px 10px;
+width:70%;
+float:left;
+}
+
+#privacy_txt{
+    margin-left:30%;
+    padding-left:10px;
+    margin-top:10px;
+}
+#form_contact_main a{
+color:#ED1C21;
+text-decoration:none;
+}
+
+#form_contact_main a:hover{
+color:#ED1C21;
+text-decoration:underline;
+}
+
+/*form pageEnquete*/
+/*-----------------------------------------------------------------------*/
+
+#basic_information{
+border-bottom: 1px solid #adadad;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+#form_enquetet_main{
+    overflow:auto;
+    margin-top: 30px;
+}
+
+#enquete_intro{
+border-bottom: 1px solid #adadad;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+#form_enquetet_main dl{
+width:100%;
+border-top:1px dotted #ddd;
+/*background-color:#f5f5f5;*/
+line-height:220%;
+float:left;
+}
+#form_enquetet_main dl:nth-child(2){border-top:none;}
+#form_enquetet_main dl.privacy{
+margin-top:30px;
+border-bottom:none;
+}
+
+#form_enquetet_main dt{
+    float: left;
+    padding: 30px 10px;
+    width: 30%;
+}
+#form_enquetet_main dt span{color: #ED1C21;}
+#form_enquetet_main dd{
+    float: left;
+    padding: 30px 10px;
+    width: 70%;
+}
+/*
+#free_text{
+margin:20px 0 10px 0;
+}*/
+
+
+/*form utility*/
+/*-----------------------------------------------------------------------*/
+
+
+.example_text{
+margin-top:5px;
+line-height:100%;
+font-size:90%;
+color:#999999;
+}
+
+#family_name,#first_name,#family_name_yomi,#first_name_yomi{
+width:120px;
+margin-right:20px;
+}
+
+#zip01,#zip02{
+width:60px;
+}
+
+#female{
+margin-left:20px;
+}
+
+#table_address td{
+padding:3px 0 3px 0;
+}
+span.break{
+    padding-left:15px;
+}
+
+.width_cs{width:100%;}
+.width_cm{width:100%;}
+.width_cl{width:100%;}
+.width_es{width:100%;}
+.width_em{width:100%;}
+.width_el{width:100%;}
+.height_s{height:50px;}
+.height_m{height:100px;}
+.height_l{height:150px;}
+
+
+/*setting*/
+/*-----------------------------------------------------------------------*/
+
+.keywords_box{
+margin-bottom:5px;
+margin-right:6px;
+float:left;
+}
+
+
+/*----エラー項目部分のハイライト----*/
+    .dcms_error_area{
+        background:#FFD7D7;
+        position: relative;
+    }
+    p.error_text{
+        display:none;
+    }
+    .dcms_error_area p.error_text{
+        display: block;
+        width: auto;
+        /*float: left;*/
+    }
+
+    .dcms_error_area p.error_text span{
+        background: #ff6666;display: inline-block;padding: 7px;
+    }
+
+/*----エラーテキストの吹き出し装飾用----*/
+    #contact-form .dcms_error_area p.error_text{
+        margin-top: 5px;
+        color: #FFF;
+        position: relative;
+        /*アニメーションをつける場合*/
+        -webkit-animation: dcms_fadein_up 0.8s 1;
+        -moz-animation: dcms_fadein_up 0.8s 1;
+        -ms-animation: dcms_fadein_up 0.8s 1;
+         -o-animation: dcms_fadein_up 0.8s 1;
+            animation: dcms_fadein_up 0.8s 1;
+    }
+    #contact-form .dcms_error_area p.error_text:before{
+        content:"";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        text-align: left;
+        top:-10px;
+        left:10px;
+        border: 5px solid transparent;
+        border-bottom: 5px solid #FF6666;
+        /*アニメーションをつける場合*/
+        -webkit-animation: dcms_fadein_up 0.8s 1;
+        -moz-animation: dcms_fadein_up 0.8s 1;
+        -ms-animation: dcms_fadein_up 0.8s 1;
+         -o-animation: dcms_fadein_up 0.8s 1;
+            animation: dcms_fadein_up 0.8s 1;
+    }
+
+    /*アニメーションを設定する*/
+    @-webkit-keyframes dcms_fadein_up {
+        0% {  opacity:0; }
+        100% { opacity:1;}
+    }
+    @-o-keyframes dcms_fadein_up {
+        0% {  opacity:0; }
+        100% { opacity:1;}
+    }
+    @-moz-keyframes dcms_fadein_up {
+        0% {  opacity:0; }
+        100% { opacity:1;}
+    }
+    @keyframes dcms_fadein_up {
+        0% {  opacity:0; }
+        100% { opacity:1;}
+    }
+
+
+
+
+
+/* screens smaller than 600---------------------------------------------------------- */
+@media only screen and (max-width:690px) {
+    
+#form_contact_main dl,
+#form_enquetet_main dl{
+border-top:none;
+margin-bottom:15px;
+line-height: 1.6;
+}
+#form_contact_main dt,#form_contact_main dd,
+#form_enquetet_main dt,#form_enquetet_main dd{
+width:100%;
+float:none;
+padding:5px 0;
+}
+#form_contact_main dt{
+    padding: 0 0 0 8px;
+    border-left: 7px #ED1C21 solid;
+    line-height: 1;
+    margin-bottom:5px;
+    margin-top:10px;
+    font-size: 16px;
+}
+#privacy_txt{
+    margin-left:0;
+    padding-left:0;
+    font-size:90%;
+}
+#submit_button{
+margin:30px 0 0;
+}
+#table_address td{
+    display:block;
+}
+span.break{
+    display:block;
+    padding-left:0;
+}
+input{
+    width:100%;
+}
+input[type=radio],input[type=checkbox]{
+    width:20px;
+}
+
+
+}
+
+.slick-slide{height: auto !important;}
+
+
+
+.privacy{
+    padding-left: calc(30% + 10px);
+}
+@media only screen and (max-width:690px) {
+    .privacy{
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+.formflow{
+    font-size: 0;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formflow li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 5%;
+    position: relative;
+}
+.formflow li:last-child{margin-right: 0;}
+.formflow li:last-child:after{display: none;}
+
+.formflow li a{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+.formflow li.prev,
+.formflow li.prev a{color: #333333;}
+.formflow.last li.prev{padding: 10px;}
+.formflow li.age{
+    color: #ffffff;
+    padding: 10px;
+}
+.formflow li.next{
+    color: #ffffff;
+    padding: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .formflow{width: 100%;}
+    .formflow li{font-size: 14px;}
+    .formflow li:after{
+        right: -3vw;
+        top: calc(50% - 5px);
+        width: 10px;
+        height: 10px;
+    }
+    .width_cs{width:100%;}
+    .width_cm{width:100%;}
+    .email_input{width:100%;}
+}
+
+@media only screen and (max-width:690px) {
+    .formflow li{font-size: 11px;}
+}
+
+input.family_name,
+input.first_name{
+    width: 40%;
+}
+input.family_name{margin-right: 10px;}
+
+@media only screen and (max-width:690px) {
+    input.family_name,
+    input.first_name{
+        width: 100%;
+        display: block;
+    }
+    input.family_name{margin-bottom: 5px;}
+}
+
+
+.inp_col2{width: 40%;}
+
+@media only screen and (max-width:690px) {
+    .inp_col2{width: 100%;}
+}
